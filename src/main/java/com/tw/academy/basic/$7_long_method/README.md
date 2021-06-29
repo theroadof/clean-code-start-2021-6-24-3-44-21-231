@@ -10,3 +10,4 @@
 >  //        output.append("Date - " + order.getDate();
 >
 >  //        output.append(order.getCustomerLoyaltyNumber());
+#### printReceipt方法过长，将方法提取成printOrderHeader方法与printOrderDetails方法

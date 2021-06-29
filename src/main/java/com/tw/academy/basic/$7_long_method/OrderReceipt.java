@@ -21,13 +21,13 @@ public class OrderReceipt {
     //todo: rename -- Tom
     public String printReceipt() {
         StringBuilder output = new StringBuilder();
+        printOrderHeader(output);
+        printOrderDetails(output);
 
-        // print headers
-        output.append(ORDERS_HEADER);
+        return output.toString();
+    }
 
-        output.append(order.getCustomerName());
-        output.append(order.getCustomerAddress());
-
+    private void printOrderDetails(StringBuilder output) {
         // prints lineItems
         double totalSalesTax = 0d;
         double totalAmountOfLineItem = 0d;
@@ -47,7 +47,14 @@ public class OrderReceipt {
 
         // print total amount
         output.append(TOTAL_AMOUNT).append('\t').append(totalAmountOfLineItem);
-        return output.toString();
+    }
+
+    private void printOrderHeader(StringBuilder output) {
+        // print headers
+        output.append(ORDERS_HEADER);
+
+        output.append(order.getCustomerName());
+        output.append(order.getCustomerAddress());
     }
 
     private void printSingleItem(StringBuilder output, LineItem lineItem) {
