@@ -5,4 +5,8 @@
 #### DeadCode 方法printCustomerName， 删除
 #### 提取printSingleItem方法，提高可读性
 #### 魔数.10不可读，提取成SALES_TAX_RATE_PERCENT常量提高可读性
-
+#### 删除DeadCode 代码与歧义注释 
+>         // print date, bill no, customer name
+>  //        output.append("Date - " + order.getDate();
+>
+>  //        output.append(order.getCustomerLoyaltyNumber());
