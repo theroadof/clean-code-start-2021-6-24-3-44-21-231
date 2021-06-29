@@ -8,10 +8,11 @@ package com.tw.academy.basic.$7_long_method;
  * @since 2018-1-1
  */
 public class OrderReceipt {
-    public static final String ORDERS_HEADER = "======Printing Orders======\n";
-    public static final String SALES_TAX = "Sales Tax";
-    public static final String TOTAL_AMOUNT = "Total Amount";
-    public static final double SALES_TAX_RATE_PERCENT = .10;
+
+    private static final String ORDERS_HEADER = "======Printing Orders======\n";
+    private static final String SALES_TAX = "Sales Tax";
+    private static final String TOTAL_AMOUNT = "Total Amount";
+    private static final double SALES_TAX_RATE_PERCENT = .10;
     private Order order;
 
     public OrderReceipt(Order order) {
