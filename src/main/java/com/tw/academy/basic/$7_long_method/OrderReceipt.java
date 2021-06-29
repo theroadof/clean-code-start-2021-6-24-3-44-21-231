@@ -11,6 +11,7 @@ public class OrderReceipt {
     public static final String ORDERS_HEADER = "======Printing Orders======\n";
     public static final String SALES_TAX = "Sales Tax";
     public static final String TOTAL_AMOUNT = "Total Amount";
+    public static final double SALES_TAX_RATE_PERCENT = .10;
     private Order order;
 
     public OrderReceipt(Order order) {
@@ -37,7 +38,7 @@ public class OrderReceipt {
             printSingleItem(output, lineItem);
 
             // calculate sales tax @ rate of 10%
-            double salesTax = lineItem.totalAmount() * .10;
+            double salesTax = lineItem.totalAmount() * SALES_TAX_RATE_PERCENT;
             totalSalesTax += salesTax;
 
             // calculate total amount of lineItem = price * quantity + 10 % sales tax

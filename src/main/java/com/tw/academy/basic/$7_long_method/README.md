@@ -3,4 +3,6 @@
 #### 神秘命名变量totSalesTx不可读，改成totalSalesTax提高可读性
 #### 神秘命名变量tot不可读，改成totalAmountOfLineItem提高可读性
 #### DeadCode 方法printCustomerName， 删除
+#### 提取printSingleItem方法，提高可读性
+#### 魔数.10不可读，提取成SALES_TAX_RATE_PERCENT常量提高可读性
 
