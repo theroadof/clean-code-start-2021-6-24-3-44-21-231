@@ -8,6 +8,9 @@ package com.tw.academy.basic.$7_long_method;
  * @since   2018-1-1
  */
 public class OrderReceipt {
+    public static final String ORDERS_HEADER = "======Printing Orders======\n";
+    public static final String SALES_TAX = "Sales Tax";
+    public static final String TOTAL_AMOUNT = "Total Amount";
     private Order order;
 
     public OrderReceipt(Order order) {
@@ -24,7 +27,7 @@ public class OrderReceipt {
         StringBuilder output = new StringBuilder();
 
         // print headers
-        output.append("======Printing Orders======\n");
+        output.append(ORDERS_HEADER);
 
         // print date, bill no, customer name
 //        output.append("Date - " + order.getDate();
@@ -54,10 +57,10 @@ public class OrderReceipt {
         }
 
         // prints the state tax
-        output.append("Sales Tax").append('\t').append(totSalesTx);
+        output.append(SALES_TAX).append('\t').append(totSalesTx);
 
         // print total amount
-        output.append("Total Amount").append('\t').append(tot);
+        output.append(TOTAL_AMOUNT).append('\t').append(tot);
         return output.toString();
     }
 }
