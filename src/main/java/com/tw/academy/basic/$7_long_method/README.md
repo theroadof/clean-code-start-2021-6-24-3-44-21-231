@@ -11,3 +11,4 @@
 >
 >  //        output.append(order.getCustomerLoyaltyNumber());
 #### printReceipt方法过长，将方法提取成printOrderHeader方法与printOrderDetails方法
+#### 提取calculateSalesTax方法与calculateTotalAmount方法，提高可读性
